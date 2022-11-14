@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VeriffAPI should send api request 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      "/sessions/session-id/media",
+      Object {
+        "headers": Object {
+          "x-request-id": "req-id",
+        },
+      },
+    ],
+    Array [
+      "/media-context/session-id",
+      Object {
+        "headers": Object {
+          "x-request-id": "req-id",
+        },
+      },
+    ],
+    Array [
+      "/sessions/session-id",
+      Object {
+        "headers": Object {
+          "x-request-id": "req-id",
+        },
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": Promise {},
+    },
+    Object {
+      "type": "return",
+      "value": Promise {},
+    },
+    Object {
+      "type": "return",
+      "value": Promise {},
+    },
+  ],
+}
+`;
+
+exports[`VeriffAPI should send api request 2`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      "Fetching session media",
+      "req-id",
+    ],
+    Array [
+      "Fetching media context",
+      "req-id",
+    ],
+    Array [
+      "Fetching session details",
+      "req-id",
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;

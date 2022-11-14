@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SessionService should accumulate and sort request data by context 1`] = `
+SessionDetailResponse {
+  "id": "90d61876-b99a-443e-994c-ba882c8558b6",
+  "status": "internal_manual_review",
+}
+`;
+
+exports[`SessionService should accumulate and sort request data by context 2`] = `
+Array [
+  Object {
+    "mediaId": "40851916-3e86-45cd-b8ce-0e948a8a7751",
+    "mimeType": "image/png",
+    "probability": 0.9264236,
+  },
+  Object {
+    "mediaId": "7f2dcbd8-5b5f-4f1a-bfa4-016ddf4dd662",
+    "mimeType": "image/png",
+    "probability": 0.8734357,
+  },
+  Object {
+    "mediaId": "40f1e462-6db8-4313-ace3-83e4f5619c56",
+    "mimeType": "image/png",
+    "probability": 0.2931033,
+  },
+]
+`;
+
+exports[`SessionService should accumulate and sort request data by context 3`] = `
+Array [
+  Object {
+    "mediaId": "a6c90b4f-ddfc-49eb-89ad-05b7f1274f96",
+    "mimeType": "image/png",
+    "probability": 0.9739324,
+  },
+]
+`;
+
+exports[`SessionService throw on fetch should throw on fetchMediaContext 1`] = `
+Array [
+  Object {
+    "error": "fetchMediaContext rejected",
+  },
+]
+`;
+
+exports[`SessionService throw on fetch should throw on fetchSessionDetails 1`] = `
+Array [
+  Object {
+    "error": "fetchSessionDetails rejected",
+  },
+]
+`;
+
+exports[`SessionService throw on fetch should throw on fetchSessionMedia 1`] = `
+Array [
+  Object {
+    "error": "fetchSessionMedia rejected",
+  },
+]
+`;
+
+exports[`SessionService throw on validation should throw on fetchMediaContext validation 1`] = `[InvalidMediaContextException: "[0].id" is required]`;
+
+exports[`SessionService throw on validation should throw on fetchSessionDetails validation 1`] = `[InvalidSessionDetailsException: "value" must be of type object]`;
+
+exports[`SessionService throw on validation should throw on fetchSessionMedia validation 1`] = `[InvalidSessionMediaException: "[0].id" is required]`;

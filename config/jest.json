@@ -1,0 +1,20 @@
+{
+  "rootDir": "../",
+  "collectCoverageFrom": [
+    "<rootDir>/src/**/*.ts"
+  ],
+  "coveragePathIgnorePatterns": [
+    "request.mock.ts"
+  ],
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "./config/tsconfig.test.json"
+    }
+  },
+  "transform": {
+    "^.+\\.(ts)$": "ts-jest"
+  },
+  "testMatch": [
+    "**/test/**/*.spec.(ts|js)"
+  ]
+}
